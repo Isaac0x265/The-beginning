@@ -1,108 +1,184 @@
-body{
-    background-color: #2F2E41;
-    height: 900px;
-
-
+body::before{
+    content: '';
+    background: #535971;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: -1;
 }
-
-header{
-    display: flex;
-    padding: 20px;
-    justify-content: center;
-}
-
-nav{
-    display: flex   ;
-    align-items: center;
-    gap: 950px;
-}
-nav ul{
-    display: flex;
-    list-style: none;
-    gap: 64px;
-    font-family: "JetBrains Mono", monospace;
+.page{
+    width: 880px;
+    height: 200px;
     
-}
-nav ul li{
-    font-size: 24px;
+    margin: auto;
     color: white;
-    
-}
-#img{
-    width: 300px;
-}
-main{
     display: flex;
-    justify-content: center;
-    gap: 200px;
-    align-items: center;
-   
-    height: 650px;
+    align-items: flex-end;
+}
+form{
     
+    
+}
+fieldset{
+    border: none;
+    
+}
+body{
+    background: #E5E5E5;
+}
+fieldset legend{
+    width: 100%;
+}
+header{
+
 }
 h1{
-    font-size: 56px;
-    color: white;
-    font-family: "JetBrains Mono", monospace;
-    
+    color: #FFF;
+font-family: Staatliches;
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
-h1 span{
-    color: #00BFA6;
-    font-weight: bold;
-    font-family: "JetBrains Mono", monospace;
-}
-.text{
-    display:block;
-    justify-content: center;
-    
-
-}
-
 p{
-    color: white;
-    font-family: "JetBrains Mono", monospace;
-    line-height: 36px;
-    margin-bottom: 24;
-    font-size: 24px;
-    
+    color: #FFF;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
-#p2{
-    line-height: 36px;
+legend{
+    color: #535971;
+font-family: Staatliches;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 34px;
+border-bottom: 1px solid  #E6E6F0;;
+width: 100%;
+margin-bottom: 68px;
 }
-#p2 span{
-    color:#00BFA6;
-    font-weight: bold;
-}
-img{
-    width: 500px;
-}
-.last{
+label{
+    color: #4E4958;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
     display: flex;
-    
-   
+    margin-bottom: 8px;
+}
+input{
+    width: 300px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid var(--Back-Lines-in-white, #0d0d94);
+    background: var(--Shapes-02, #FAFAFC);
+    padding: 12px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+#name_and_surname{
+    display: flex;
+    justify-content: space-evenly;
 }
 
-footer{
+
+.time legend{
+    margin-top: 64px;
     display: flex;
+}
+#horarios{
+    font-size: 18px;
+    border: none;
+    display: flex;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly
+
+}
+
+.container fieldset label{
+    
+        color: #4E4958;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 171.429% */
+        display: flex;
+        margin-bottom: 8px;
+}
+.container fieldset input{
+    width: 350px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid var(--Back-Lines-in-white, #0d0d94);
+    background: var(--Shapes-02, #FAFAFC);
+    padding: 12px;
+    box-sizing: border-box;
+    font-size: 16px;    
+}
+ .footer{
+    background: #0d0d94;
+    height: 300px;
+    width: 100%;
+    position: relative  ;
+    bottom: 0;
+    left: 0;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    
+}
+.footer button{
+    height: 50%;
+    width: 50%;
+}
+.hero{
+    
+    background:white;
+    width: 750px;
+    height: auto;
+    margin: auto;
+    border-radius: 10px 10px 0px 0px;
+    padding: 64px;
+    display: block;
+}
+.bu{
+    width: 880px;
+    height: 100px;
+    display: flex;
+    margin: auto;
+    border-radius: 0px 0px 20px 20px;
+    background: #535971;
     justify-content: center;
-    
+    align-items: center;
 }
-.line{
-    width: 1000px;
-    border: 1px solid #00BFA6;
+.bu button{
+    height: 50px;
+    width: 300px;
+    border-radius: 20px;
+    background: #FF5374;
+    border: none;
+    color: white;
+    font-size: 24px;
 }
-
-#div p {
-    margin-top: 80px;
-    gap :10px
-
-}
-#div{
-    text-align: center;
-    
-}
-#link{
-    text-decoration: #00BFA6;
-    
+#sla select{
+    width: 350px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid var(--Back-Lines-in-white, #0d0d94);
+    background: var(--Shapes-02, #FAFAFC);
+    padding: 12px;
+    box-sizing: border-box;
+    font-size: 16px;    
 }
